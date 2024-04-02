@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container-fluid {
+            padding: 0%;
+        }
+
+        .border1 {
+            height: 1px;
+            background-color: black;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-family: cursive;
+            font-weight: 500;
+            font-size: 25px;
+            margin-bottom: 8px;
+            text-transform: lowercase;
+            margin-left: 100px;
+            margin-right: auto;
+            
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+            padding: 0px;
+        }
+
+        .child {
+            width: auto;
+            height: 550px;
+            border: solid grey;
+            margin-top: 45px;
+            border-radius: 5px;
+            border-width: 2px;
+            border-color: rgb(128, 128, 128, 0.3);
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+        }
+
+        input[type="text"] {
+            color: rgb(42, 39, 39);
+            font-size: smaller;
+            padding-left: 5px;
+
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .trouble {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin-top: 12px;
+        }
+
+        .details {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            margin-bottom: 0px;
+            color: rgb(128, 128, 128, 0.7);
+            font-weight: 500;
+
+        }
+
+        .details2 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            color: rgb(128, 128, 128, 0.7);
+            letter-spacing: -0.3px;
+            font-weight: 500;
+
+        }
+
+        .inputbox {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .inputchild {
+            width: 310px;
+            height: 40px;
+            border-radius: 5px;
+            border-width: 1px;
+            border-color: rgb(128, 128, 128, 0.3);
+            background-color: rgba(195, 195, 195, 0.1);
+        }
+
+        .inputchild::placeholder {
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 8px;
+            font-weight: 500;
+            color: rgb(128, 128, 128, 0.6);
+
+        }
+
+        .text {
+            margin-top: -10px;
+        }
+
+        .linkbtn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .loginbtn {
+            width: 310px;
+            height: 35px;
+            border-radius: 8px;
+            border: none;
+            background-color: rgb(69, 153, 237);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        .loginbtn:hover {
+            background-color: rgb(9, 111, 212);
+            ;
+        }
+
+        .borderline1 {
+            height: 1.5px;
+            width: 115px;
+            background-color: rgba(128, 128, 128, 0.3);
+        }
+
+        .borderline2 {
+            height: 1.5px;
+            width: 115px;
+            background-color: rgba(128, 128, 128, 0.3);
+        }
+
+        .borders1 {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 28px;
+            align-items: center;
+        }
+
+        .textborder {
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(128, 128, 128, 0.9);
+        }
+
+        .acctext {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.9);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        .bottmbtn {
+            display: flex;
+            justify-content: center;
+            margin-top: 88px;
+
+
+        }
+
+        .backbtn {
+            width: 420px;
+            height: 45px;
+            border-width: 1px;
+            border-color: rgb(128, 128, 128, 0.3);
+            background-color: rgba(195, 195, 195, 0.1);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+
+        }
+
+        .acctext:hover {
+            color: rgba(45, 41, 41, 0.6);
+            cursor: pointer;
+
+        }
+
+        .backbtn:hover {
+            color: rgba(45, 41, 41, 0.6);
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <p class="border1"></p>
+        <p class="title">Instagram</p>
+        <p class="border1"></p>
+    </div>
+  <form class="userForm">
+    <div class="container">
+        <div class="child">
+            <div class="logo"><img src="circular_logo-removebg-preview.png" width="100px" height="100px"
+                    alt="No image found"></div>
+            <p class="trouble">Trouble Logging In?</p>
+            <div class="text">
+                <p class="details">Enter your email, phone, or username and we'll</p>
+                <p class="details2">send you a link to get back into your account.</p>
+            </div>
+            
+                <div class="inputbox"><input class="inputchild" type="text" placeholder="Email, Phone, or Username"></div>
+                <div class="linkbtn"><button class="loginbtn" type="submit">Send Login Link</button></div></form>
+            
+                <div class="borders1">
+                    <p class="borderline1"></p>
+                    <p class="textborder">OR</p>
+                    <p class="borderline2"></p>
+                </div>
+                <p class="acctext">Create New Account</p>
+                <div class="bottmbtn"><a href="http://127.0.0.1:5500/insta.html" target="_blank"><button
+                            class="backbtn">Back To Login</button></a></div>
+                              
+                    
+        </div>
+    </div>
+
+
+       <script src="forgorpassword.js"></script>
+</body>
+</html>
